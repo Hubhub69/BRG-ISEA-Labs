@@ -60,15 +60,18 @@ My lab activities and documentation for the ISEA module
    - Viewed permission:
      ```bash
      ls -1
-    ```
+    
  - Changed file permissions:
      ```bash
     chmod 755 testfile.txt
     ```
+     
   - Changed file ownership:
     ```bash
     sudo chown vboxuser:vboxuser testfile.txt
     ```
-      
-
-
+    - Searched for text inside files:
+    ```bash
+    grep -r "hello" /home/vboxuser
+    ``
+    
