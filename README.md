@@ -26,7 +26,7 @@ My lab activities and documentation for the ISEA module
 ##Screenshots(s)
 - Installed Ubuntu on VirtualBox
 ![UbuntuTerminal](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/UbuntuTerminal.png?raw=true)
-- Ran basic Linux commands (`pwd`, `ls`, `mkdir`, `touch`)  
+- Ran basic Linux commands (`pwd`, `ls`, `mkdir`, `touch`, `man ls`)  
 ![Terminal Commands](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/CommandPage-1a.png?raw=true)
 - Viewed manual page for `man ls`  
 ![Manual Page](https://raw.githubusercontent.com/Hubhub69/BRG-ISEA-Labs/68d06047023fd133715ecc8c983257cd46b2fd3a/ManualPage.png)
