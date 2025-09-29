@@ -83,6 +83,7 @@ My lab activities and documentation for the ISEA module
     grep -r "hello" /home/vboxuser/testfolder
     ```
 ### Screenshot(s)
+
 ![File Content](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/cat.png?raw=true)
 ![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
 ![File Search - grep](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/grep.png?raw=true)
