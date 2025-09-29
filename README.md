@@ -1,26 +1,43 @@
 # BRG-ISEA-Labs
 My lab activities and documentation for the ISEA module
----
  ## Session 1a - Linux Setup
+- Created a GitHub account and repository ('BRG-ISEA-Labs') to document lab progress.
+- Added 'README,md' to start recording activities, screenshots, and challenges.
 - Installed Ubuntu on VirtualBox.
 - Created an Ubuntu VM using Ubuntu 22.04 ISO.
-- configured VM settings:
-- Memory: 4096 MB
-- CPU: 4
-- Boot Order: Hard Disk, Optical, Floppy, Network
-- Video Memory: 16 MB
+  - configured VM settings:
+  - Memory: 4096 MB
+    - CPU: 4
+    - Disk: 20 GB
 - Installed Ubuntu successfully and accessed the desktop.
-- Ran basic commands: 'pwd', 'is', 'mkdir', 'touch'.
-- 'pwd' is print working directory
-- 'ls' is a list of files.
-- 'mkdir testfolder' creates a folder
-- 'touch testfile.txt' creates a file
-- 'man ls' is the view manual page for ls
+- Practiced basic Linux commands:
+  - `pwd` → print working directory
+  - `ls` → list files
+  - `cd` → change directory
+  - `mkdir testfolder` → create folder
+  - `touch testfile.txt` → create empty file
+- Explored directory structure:
+  - `/etc` → system configuration files
+  - `/var` → variable data/log files
+  - `/home` → user home directories
+- Used `man` to explore Linux manual pages (e.g., `man ls`).
   
 
-** Screenshots**
+##Screenshots(s)
 ![UbuntuTerminal](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/UbuntuTerminal.png?raw=true)
 ![Terminal Commands](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/CommandPage-1a.png?raw=true)
 ![Manual Page](https://raw.githubusercontent.com/Hubhub69/BRG-ISEA-Labs/68d06047023fd133715ecc8c983257cd46b2fd3a/ManualPage.png)
+![Root Directory]()
+
+## Challenges 
+- Windows Smart App Control blocked the Ubuntu ISO multiple times.
+- Troubleshooting wasted around 4–5 hours.
+- Solved the issue after searching on Google and watching YouTube tutorials.
+- Learned patience and the importance of using community resources.
+- Misconfigured VM resources (too little RAM/CPU), installation was very slow until adjusted.
+- Type 'is' instead of 'ls', learned to be careful with spelling.
+- Did not know how to exit 'man' pages, later learned to press 'q'.
+  
+  
 
 
