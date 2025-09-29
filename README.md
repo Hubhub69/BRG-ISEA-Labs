@@ -117,4 +117,24 @@ My lab activities and documentation for the ISEA module
 - Accidentally typed `ls -1` (number one) instead of `ls -l` (lowercase L), which only listed files without showing permissions. Learned to carefully check the command.  
 - `grep -r` returned too many results when searching the entire `/home` directory. Solved by limiting the search to `/home/vboxuser/testfolder`.  
 - Forgot that `sudo` requires the user's password. Took a few tries to realize it was the login password for `vboxuser`.  
-- After reboot, the test file seemed to be missing because I was in the wrong directory. Learned to always check with `pwd` and `ls` to confirm file location.  
+- After reboot, the test file seemed to be missing because I was in the wrong directory. Learned to always check with `pwd` and `ls` to confirm file location.
+  
+
+## Session 2a - Total Cost of OwnerShip(TCO)
+Compared On-Premise vs AWS EC2 (Cloud) infrastructure costs.
+
+Considered:
+
+- Hardware (servers, storage, networking)
+
+- Software/Licensing
+
+- Electricity & Cooling
+
+-Staff/Admin costs
+
+-Created Excel/Google Sheets table for yearly costs.
+
+-Projected 3-year TCO with ROI and break-even point.
+
+- Generated a bar chart showing On-Prem vs AWS cost trends.
