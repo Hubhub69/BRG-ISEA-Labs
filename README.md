@@ -42,7 +42,7 @@ My lab activities and documentation for the ISEA module
 
 ## Activities 
 - Explored Linux service:
-- Listed all service
+- Listed all services
 - ```bash
     systemctl list-units --type=service
     ```
@@ -58,7 +58,8 @@ My lab activities and documentation for the ISEA module
 
 - Worked with file and directory permissions:
    - Viewed permission:
-     ```bash ls -1
+     ```bash
+     ls -1
     ```
   - Changed file permissions:
     ```bash
