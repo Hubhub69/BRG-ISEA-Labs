@@ -138,7 +138,7 @@ TCO Cost Table
 ![Cost Table](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/TCO%20table.png?raw=true)
 TCO 3- Years Comparison Chart
 ![Comparison Chart](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/TCO%20chart.png?raw=true)
-
+---
 ### ROI
 Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
 - Year 2: (22,400 − 5,600) ÷ 22,400 = **75%**
