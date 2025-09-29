@@ -61,8 +61,8 @@ My lab activities and documentation for the ISEA module
      ```bash
      ls -1
     ```
-  - Changed file permissions:
-    ```bash
+ - Changed file permissions:
+     ```bash
     chmod 755 testfile.txt
     ```
   - Changed file ownership:
