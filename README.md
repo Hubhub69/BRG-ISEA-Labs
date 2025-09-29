@@ -76,5 +76,5 @@ My lab activities and documentation for the ISEA module
 
 ### Screenshot(s)
 ![File Content](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/cat.png?raw=true)
-![File Search - Find]()
+![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
 ![File Search - grep]()
