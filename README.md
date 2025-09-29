@@ -40,41 +40,49 @@ My lab activities and documentation for the ISEA module
   
 ## Session 1b - Exploring Linux
 
-## Activities 
-- Explored Linux service:
-- Listed all services
-- ```bash
+*Explored Linux services**
+  - Listed all services:
+    ```bash
     systemctl list-units --type=service
     ```
   - Checked status of `cron` service:
     ```bash
     sudo systemctl status cron
     ```
-  - Started and stopped services:
+  - Started and stopped `cron`:
     ```bash
     sudo systemctl stop cron
     sudo systemctl start cron
     ```
 
-- Worked with file and directory permissions:
-   - Viewed permission:
-     ```bash
-     ls -1
-    
- - Changed file permissions:
-     ```bash
+- **Worked with file and directory permissions**
+  - Viewed permissions:
+    ```bash
+    ls -l
+    ```
+  - Changed file permissions:
+    ```bash
     chmod 755 testfile.txt
     ```
-     
+  - Viewed updated permissions:
+    ```bash
+    ls -l testfile.txt
+    ```
   - Changed file ownership:
     ```bash
     sudo chown vboxuser:vboxuser testfile.txt
     ```
-    - Searched for text inside files:
-    ```bash
-    grep -r "hello" /home/vboxuser
 
+- **Searching the filesystem**
+  - Found file by name:
+    ```bash
+    find /home/vboxuser -name "testfile.txt"
+    ```
+  - Searched text inside files (limit to your folder to avoid tons of matches):
+    ```bash
+    grep -r "hello" /home/vboxuser/testfolder
+    ```
 ### Screenshot(s)
 ![File Content](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/cat.png?raw=true)
 ![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
-![File Search - grep]()
+![File Search - grep](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/grep.png?raw=true)
