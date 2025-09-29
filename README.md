@@ -22,7 +22,7 @@ My lab activities and documentation for the ISEA module
   - `/home` → user home directories
 - Used `man` to explore Linux manual pages (e.g., `man ls`).
   
-
+---
 ## Screenshots(s)
 - Installed Ubuntu on VirtualBox
 ![UbuntuTerminal](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/UbuntuTerminal.png?raw=true)
@@ -32,7 +32,7 @@ My lab activities and documentation for the ISEA module
 ![Manual Page](https://raw.githubusercontent.com/Hubhub69/BRG-ISEA-Labs/68d06047023fd133715ecc8c983257cd46b2fd3a/ManualPage.png)
 - Explored root directory structure (/etc, /home, /var)
 ![Root Directory](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/root%20directory%20(1).png?raw=true)
-
+---
 ## Challenges for Session 1a
 - Windows Smart App Control blocked the Ubuntu ISO multiple times.
 - Troubleshooting wasted around 4–5 hours.
@@ -41,7 +41,7 @@ My lab activities and documentation for the ISEA module
 - Misconfigured VM resources (too little RAM/CPU), installation was very slow until adjusted.
 - Type 'is' instead of 'ls', learned to be careful with spelling.
 - Did not know how to exit 'man' pages, later learned to press 'q'.
-  
+  ---
 ## Session 1b - Exploring Linux
 
 *Explored Linux services**
@@ -119,7 +119,7 @@ My lab activities and documentation for the ISEA module
 - Forgot that `sudo` requires the user's password. Took a few tries to realize it was the login password for `vboxuser`.  
 - After reboot, the test file seemed to be missing because I was in the wrong directory. Learned to always check with `pwd` and `ls` to confirm file location.
   
-
+---
 ## Session 2a - Total Cost of OwnerShip(TCO)
 Compared **On-Premise** vs **AWS EC2 (Cloud)** infrastructure costs.
 - Considered:
@@ -153,3 +153,12 @@ Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
 = 5,000 ÷ 701
 
 ≈ **7 months**
+---
+### Challenges for Session 2a
+- Had difficulty deciding which cost items to include (hardware, software, staff vs hidden cloud costs like bandwidth or support).  
+- Initially forgot to calculate **monthly costs** → corrected by dividing yearly values by 12. 
+- First Excel formulas were wrong (totals did not update automatically) → fixed with `=SUM()` functions.  
+- Chart design was confusing at first (too many details) → simplified to a clear 3-year bar chart.  
+- ROI formula was easy, but understanding **Break-even logic** was tricky → solved by applying the correct formula using upfront cost ÷ monthly savings.  
+
+
