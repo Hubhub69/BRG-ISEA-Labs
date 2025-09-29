@@ -87,6 +87,9 @@ My lab activities and documentation for the ISEA module
 ![Cron Running](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20active.png?raw=true)
 ![Cron Stopped](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20inactive.png?raw=true)
 ![Cron Restarted](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20Restarted.png?raw=true)
+![Permissions Before](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/chomd%20before.png?raw=true)
+![Permissions After](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/chomd%20after.png?raw=true)
+![Changed Ownership](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/sudo%20chown.png?raw=true)
 
 ![File Content](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/cat.png?raw=true)
 ![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
