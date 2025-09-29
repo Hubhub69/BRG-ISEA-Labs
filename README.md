@@ -135,6 +135,6 @@ Compared **On-Premise** vs **AWS EC2 (Cloud)** infrastructure costs.
 
 ## Screenshot(s)
 TCO Cost Table
-![Cost Table]()
+![Cost Table](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/TCO%20table.png?raw=true)
 TCO 3- Years Comparison Chart
 ![Comparison Chart]()
