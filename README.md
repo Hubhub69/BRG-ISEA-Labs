@@ -58,9 +58,7 @@ My lab activities and documentation for the ISEA module
 
 - Worked with file and directory permissions:
    - Viewed permission:
-     ```bash
-    ls -l
-  
+     ```bash ls -1
     ```
   - Changed file permissions:
     ```bash
