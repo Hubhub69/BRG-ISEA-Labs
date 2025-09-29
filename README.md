@@ -111,3 +111,10 @@ My lab activities and documentation for the ISEA module
 ![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
 - Searched text with `grep` 
 ![File Search - grep](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/grep.png?raw=true)
+
+## Challenges for Session 1b
+-Initially confused between `chmod` and `chown`, took time to understand the difference between changing permissions vs. changing ownership.  
+- Accidentally typed `ls -1` (number one) instead of `ls -l` (lowercase L), which only listed files without showing permissions. Learned to carefully check the command.  
+- `grep -r` returned too many results when searching the entire `/home` directory. Solved by limiting the search to `/home/vboxuser/testfolder`.  
+- Forgot that `sudo` requires the user's password. Took a few tries to realize it was the login password for `vboxuser`.  
+- After reboot, the test file seemed to be missing because I was in the wrong directory. Learned to always check with `pwd` and `ls` to confirm file location.  
