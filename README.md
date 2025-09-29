@@ -29,7 +29,7 @@ My lab activities and documentation for the ISEA module
 ![Manual Page](https://raw.githubusercontent.com/Hubhub69/BRG-ISEA-Labs/68d06047023fd133715ecc8c983257cd46b2fd3a/ManualPage.png)
 ![Root Directory](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/root%20directory%20(1).png?raw=true)
 
-## Challenges 
+## Challenges for Session 1a
 - Windows Smart App Control blocked the Ubuntu ISO multiple times.
 - Troubleshooting wasted around 4–5 hours.
 - Solved the issue after searching on Google and watching YouTube tutorials.
