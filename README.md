@@ -86,6 +86,7 @@ My lab activities and documentation for the ISEA module
     ```bash
     grep -r "hello" /home/vboxuser/testfolder
     ```
+ ---
 ### Screenshot(s)
 - Listed all services
 ![Service List](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/list-units.png?raw=true)
@@ -160,5 +161,18 @@ Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
 - First Excel formulas were wrong (totals did not update automatically) → fixed with `=SUM()` functions.  
 - Chart design was confusing at first (too many details) → simplified to a clear 3-year bar chart.  
 - ROI formula was easy, but understanding **Break-even logic** was tricky → solved by applying the correct formula using upfront cost ÷ monthly savings.  
+---
+## Session 2b – Cloud Services & Bash
+
+### Cloud Computing – Launch and Configure EC2 Instance
+- Created a **free-tier AWS account** to access cloud resources.
+- Launched an **Ubuntu 22.04 EC2 instance (t2.micro, Free Tier)**.
+- Configured:
+  - **SSH key pair** for secure authentication.
+  - **Security group/firewall** rule to allow inbound SSH (port 22).
+- Connected to the instance from the terminal:
+  ```bash
+  ssh -i key.pem ubuntu@<public-ip>
+
 
 
