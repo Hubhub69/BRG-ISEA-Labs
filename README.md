@@ -137,4 +137,10 @@ Considered:
 
 -Projected 3-year TCO with ROI and break-even point.
 
-- Generated a bar chart showing On-Prem vs AWS cost trends.
+-Generated a bar chart showing On-Prem vs AWS cost trends.
+
+## Screenshot(s)
+TCO Cost Table
+![Cost Table](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/session2a_tco_chart.png?raw=true)
+TCO 3- Years Comparison Chart
+![Comparison Chart]()
