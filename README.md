@@ -20,6 +20,7 @@ My lab activities and documentation for the ISEA module
 
 ** Screenshots**
 ![UbuntuTerminal](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/UbuntuTerminal.png?raw=true)
-![Terminal commands]()
+![Terminal Commands](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/CommandPage-1a.png?raw=true)
+![Manual Page]()
 
 
