@@ -38,6 +38,38 @@ My lab activities and documentation for the ISEA module
 - Type 'is' instead of 'ls', learned to be careful with spelling.
 - Did not know how to exit 'man' pages, later learned to press 'q'.
   
+## Session 1b - Exploring Linux
+
+## Activities 
+- Explored Linux service:
+- Listed all service
+- ```bash
+    systemctl list-units --type=service
+    ```
+  - Checked status of `cron` service:
+    ```bash
+    sudo systemctl status cron
+    ```
+  - Started and stopped services:
+    ```bash
+    sudo systemctl stop cron
+    sudo systemctl start cron
+    ```
+
+- Worked with file and directory permissions:
+   - Viewed permission:
+     ```bash
+    ls -l
   
+    ```
+  - Changed file permissions:
+    ```bash
+    chmod 755 testfile.txt
+    ```
+  - Changed file ownership:
+    ```bash
+    sudo chown vboxuser:vboxuser testfile.txt
+    ```
+      
 
 
