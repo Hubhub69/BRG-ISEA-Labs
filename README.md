@@ -73,5 +73,4 @@ My lab activities and documentation for the ISEA module
     - Searched for text inside files:
     ```bash
     grep -r "hello" /home/vboxuser
-    ``
     
