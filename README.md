@@ -83,6 +83,9 @@ My lab activities and documentation for the ISEA module
     grep -r "hello" /home/vboxuser/testfolder
     ```
 ### Screenshot(s)
+![Service List](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/list-units.png?raw=true)
+![Cron Running](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20active.png?raw=true)
+![Cron Stopped](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20inactive.png?raw=true)
 
 ![File Content](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/cat.png?raw=true)
 ![File Search - Find](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/find.png?raw=true)
