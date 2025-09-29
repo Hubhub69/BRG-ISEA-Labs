@@ -23,7 +23,7 @@ My lab activities and documentation for the ISEA module
 - Used `man` to explore Linux manual pages (e.g., `man ls`).
   
 
-##Screenshots(s)
+## Screenshots(s)
 - Installed Ubuntu on VirtualBox
 ![UbuntuTerminal](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/UbuntuTerminal.png?raw=true)
 - Ran basic Linux commands (`pwd`, `ls`, `mkdir`, `touch`, `man ls`)  
