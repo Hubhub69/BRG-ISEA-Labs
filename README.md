@@ -121,26 +121,20 @@ My lab activities and documentation for the ISEA module
   
 
 ## Session 2a - Total Cost of OwnerShip(TCO)
-Compared On-Premise vs AWS EC2 (Cloud) infrastructure costs.
+Compared **On-Premise** vs **AWS EC2 (Cloud)** infrastructure costs.
+- Considered:
+  - Hardware (servers, storage, networking)
+  - Software/Licensing
+  - Electricity & Cooling
+  - Staff/Admin costs
+- Documented monthly and yearly costs in Excel/Google Sheets.
+- Projected 3-year TCO (On-Prem vs AWS).
+- Calculated **ROI** and **Break-even point**.
 
-Considered:
 
-- Hardware (servers, storage, networking)
-
-- Software/Licensing
-
-- Electricity & Cooling
-
--Staff/Admin costs
-
--Created Excel/Google Sheets table for yearly costs.
-
--Projected 3-year TCO with ROI and break-even point.
-
--Generated a bar chart showing On-Prem vs AWS cost trends.
 
 ## Screenshot(s)
 TCO Cost Table
-![Cost Table](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/session2a_tco_chart.png?raw=true)
+![Cost Table]()
 TCO 3- Years Comparison Chart
 ![Comparison Chart]()
