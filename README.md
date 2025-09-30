@@ -162,17 +162,90 @@ Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
 - Chart design was confusing at first (too many details) → simplified to a clear 3-year bar chart.  
 - ROI formula was easy, but understanding **Break-even logic** was tricky → solved by applying the correct formula using upfront cost ÷ monthly savings.  
 ---
-## Session 2b – Cloud Services & Bash
+## Session 2b – Cloud Services - AWS EC2 Lab
 
-### Cloud Computing – Launch and Configure EC2 Instance
-- Created a **free-tier AWS account** to access cloud resources.
-- Launched an **Ubuntu 22.04 EC2 instance (t2.micro, Free Tier)**.
-- Configured:
-  - **SSH key pair** for secure authentication.
-  - **Security group/firewall** rule to allow inbound SSH (port 22).
-- Connected to the instance from the terminal:
+## 1. Create Free Tier Account
+- Registered an AWS Free Tier account.  
+- Accessed the AWS Management Console.
+  
+  -AWS Console Home (showing EC2 service)
+  ![AWS Console Home](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/AWS%20Console%20home.png?raw=true)
+
+  ---
+## 2. Launch Ubuntu Instance
+- Launched an EC2 instance using **Ubuntu Server 22.04 LTS**.  
+- Instance type: **t3.micro (Free Tier)**.  
+- Region: **ap-southeast-2 (Sydney)**.  
+- Instance ID: `i-03419803d6fc2b148`  
+- Instance state: **Running**
+  
+  - EC2 Instance list (showing Running status)
+    ![EC2 Instance](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/EC2%20Instance.png?raw=true)
+
+  -  Instance Summary page (showing Public IP, Instance State, Instance type)
+    ![Instance Summary](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Instance%20summary%20page.png?raw=true)
+
+---
+## 3. Configure Security and SSH Key Pair
+- Created SSH key pair and downloaded `isea-key.pem`.  
+- Configured Security Group inbound rules:  
+  - Allowed **SSH (Port 22, TCP)** from Anywhere (0.0.0.0/0).
+
+    - Key pair file (`isea-key.pem`) saved on local machine
+      ![Key pair file](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/.pem%20file.png?raw=true)
+
+      - Security Group inbound rule (showing Port 22 open)
+      ![Port 22](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/SSH%20port%2022,%20tcp.png?raw=true)
+---
+## 4. Connect to VM Using SSH
+- Changed key permissions:
   ```bash
-  ssh -i key.pem ubuntu@<public-ip>
+  chmod 400 /path/to/isea-key.pem
+  
+ - Connected to EC2 instance with:
+     ```bash
+     ssh -i /path/to/isea-key.pem ubuntu@<Public-IP>
 
+  - Example:
+     ```bash
+     ssh -i /media/sf_isea-key/isea-key.pem ubuntu@54.66.169.204
 
+- Successful SSH login (showing ubuntu@ip-... prompt)
+  ![SSH](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/connect%20to%20VM%20using%20SSH.png?raw=true)
 
+  ---
+### **Step 5 – Update OS Packages**
+- Ran update and upgrade commands:
+  ```bash
+  sudo apt update && sudo apt upgrade -y
+
+- Update OS Packages
+  ![OS package](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Update%20OS%20package.png?raw=true)
+
+- kernel upgrade notice
+  ![Kernel Upgrade](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/kernel1.png?raw=true)
+
+  ---
+## Challenges for Launch and configure EC2 instance
+
+  **Key Pair Access Issues**  
+  - Initially had difficulty finding the `.pem` key file inside the Ubuntu VM.  
+  - Solved this by locating the correct shared folder path (`/media/sf_isea-key/isea-key.pem`).
+
+  **File Permission Error**  
+  - Encountered “unprotected private key file” error.  
+  - Fixed it by running `chmod 400` to restrict file permissions.
+
+   **SSH Connection Errors**  
+  - Faced repeated “No such file or directory” and “Permission denied (publickey)” errors.  
+  - Learned that correct path formatting and file permissions are critical for SSH login.
+
+    **System Update Reboot Notice**  
+  - During `sudo apt update && sudo apt upgrade`, the system requested a reboot to apply a new kernel.  
+  - Restarted the instance and reconnected via SSH to verify the updated kernel.
+
+    **Time Consuming Setup**  
+  - The whole process of troubleshooting SSH and permissions took several attempts, wasting extra time.  
+  - Learned patience and attention to detail in handling Linux commands and AWS settings.
+     
+  
