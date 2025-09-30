@@ -226,26 +226,84 @@ Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
   ![Kernel Upgrade](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/kernel1.png?raw=true)
 
   ---
-## Challenges for Launch and configure EC2 instance
+## Challenges for Launch and Configure EC2 instance
 
-  **Key Pair Access Issues**  
+ **Key Pair Access Issues**  
   - Initially had difficulty finding the `.pem` key file inside the Ubuntu VM.  
   - Solved this by locating the correct shared folder path (`/media/sf_isea-key/isea-key.pem`).
 
-  **File Permission Error**  
+ **File Permission Error**  
   - Encountered “unprotected private key file” error.  
   - Fixed it by running `chmod 400` to restrict file permissions.
 
    **SSH Connection Errors**  
   - Faced repeated “No such file or directory” and “Permission denied (publickey)” errors.  
   - Learned that correct path formatting and file permissions are critical for SSH login.
-
-    **System Update Reboot Notice**  
+    
+**System Update Reboot Notice**  
   - During `sudo apt update && sudo apt upgrade`, the system requested a reboot to apply a new kernel.  
   - Restarted the instance and reconnected via SSH to verify the updated kernel.
 
-    **Time Consuming Setup**  
+**Time Consuming Setup**  
   - The whole process of troubleshooting SSH and permissions took several attempts, wasting extra time.  
   - Learned patience and attention to detail in handling Linux commands and AWS settings.
+
+    ---
+## Session 2b – Bash Scripting
+
+## 1. Objectives
+- Create a Bash script file (`script.sh`) with the shebang line `#!/bin/bash`.  
+- Demonstrate the use of:
+  - `echo`  
+  - `if` statement  
+  - `for` loop  
+  - `while` loop  
+  - cron example (as a comment/echo line)  
+- Run the script using:
+  - `bash script.sh`  
+  - `chmod +x script.sh && ./script.sh`
+
+ ----
+ ## 2. Create the Script
+- Used `nano` to create and edit `script.sh`.  
+- Added the required code with `echo`, `if`, `for`, `while`, and cron example.  
+
+- Script code inside `nano`:
+![Script Code](![Uploading image.png…](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/script%20code.png?raw=true)
+
+--- 
+## 3. Run Script with Bash
+- Executed the script directly with `bash script.sh`.  
+- Verified output showed:
+  - Script header and timestamp  
+  - `if` condition result (`The passwd file exists.`)  
+  - `for` loop numbers (1–3)  
+  - `while` loop counters (1–3)  
+  - Example cron line
+
+   - Terminal output (`bash script.sh`):
+     ![Bash 1](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/bash%20script.sh%201.png?raw=true)
+     ![Bash 2](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/bash%20script.sh%202.png?raw=true)
+     ![Bash run](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/run%20bash.png?raw=true)
+
+     ---
+ ## 4. Make Script Executable
+- Added execute permissions with `chmod +x script.sh`.  
+- Confirmed permissions via `ls -l script.sh` (showing `-rwxr-xr-x`).  
+- Ran script with `./script.sh`, same output as before.  
+
+- File permissions and executable run:
+  ![Executable Run](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/executable%20run.png?raw=true)
+
+  ## 5. Challenges for bash scripting
+
+- Needed to type the script line by line in `nano`, which was slow and increased the chance of typos.  
+- Initially wrote `!/bin/bash` instead of `#!/bin/bash`, causing the script not to run.  
+- Mistyped the `if` condition without spaces (`if[-f /etc/passwd];`), fixed it to `if [ -f /etc/passwd ]; then`.  
+- Could not run `./script.sh` at first because of missing permissions, solved with `chmod +x script.sh`.  
+- Unsure about the cron requirement; decided to include a cron example line inside the script instead of setting up a real cron job.  
+
+
+    ---
      
   
