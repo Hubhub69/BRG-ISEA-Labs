@@ -90,16 +90,15 @@ My lab activities and documentation for the ISEA module
 ### Screenshot(s)
 - Listed all services
 ![Service List](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/list-units.png?raw=true)
-
 - Checked status of cron (running)
 ![Cron Running](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20active.png?raw=true)
-
 - Stopped cron (inactive) 
 ![Cron Stopped](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20inactive.png?raw=true)
-
-- Restarted cron (running again)  
+-Restarted cron (running again)  
 ![Cron Restarted](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/status%20cron%20Restarted.png?raw=true)
+
 ---
+
 ### 2. Linux Permissions
 - Permissions before 
 ![Permissions Before](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/chomd%20before.png?raw=true)
