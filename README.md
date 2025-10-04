@@ -342,6 +342,12 @@ The purpose of this lab is to configure and test DNS using a free cloud DNS prov
 - The ping command successfully resolved the domain to 45.195.233.213 and returned responses, verifying connectivity to the server.
 ![Ping](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Ping.png?raw=true)
 
+-------
+## Challenges for DNS and Propagation
+During the DNS configuration, my A record still pointed to the old IP address (45.195.233.213) instead of the new EC2 public IP (54.66.169.204). At this stage, I could finish the DNS setup and verification steps, but the domain was not fully linked to my active EC2 server yet. I only realized and fixed it later during the Certbot (SSL) lab, where I updated the A record to the correct IP so the certificate could be issued successfully.
+
+------
+
 ## Digital Certificates – Use Let’s Encrypt to Secure a Server
 # 1. Install Certbot
 - Installed Certbot with Apache plugin:
@@ -365,8 +371,28 @@ The purpose of this lab is to configure and test DNS using a free cloud DNS prov
 - sudo certbot --apache
 ![Run Certbot](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Run%20Certbot.png?raw=true)
 
-
+---
 ## Verification Result
+- Certbot successfully issued SSL/TLS certificate.
+![certbot_success](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/certbot_success.png?raw=true)
+
+- Certificate stored at `/etc/letsencrypt/live/jameson06.ddnsfree.com/`.
+  ![Certificate](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/certificate.png?raw=true)
+  
+- HTTPS successfully enabled for `https://jameson06.ddnsfree.com`.
+  ![HTTPS](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/HTTPS.png?raw=true)
+
+  
+## Challenging (Digital Certificates – Let’s Encrypt)
+During the process of enabling HTTPS with Let’s Encrypt, I encountered several challenges before I was able to deploy the certificate successfully. At first, my domain jameson06.ddnsfree.com was not pointing to the correct EC2 public IP, which caused Certbot to fail with DNS errors when it tried to look up the A and AAAA records. I had to wait for the DNS changes to propagate and verify the result using nslookup to confirm that the domain resolved correctly to my server.
+
+Even after fixing DNS, Certbot still failed because port 80 and port 443 were blocked. Although Apache was running, the Certificate Authority could not reach the verification file, and the error message showed “connection refused.” To resolve this, I updated the AWS EC2 Security Group inbound rules and allowed ports 22 (SSH), 80 (HTTP), and 443 (HTTPS) from all addresses.
+
+Once the firewall was corrected, I made sure Apache was actively running on port 80 using commands such as systemctl status apache2 and ss -tulnp | grep :80. After confirming the service was running properly, I retried Certbot, and this time it succeeded.
+
+Finally, the certificate for jameson06.ddnsfree.com was issued, stored at /etc/letsencrypt/live/jameson06.ddnsfree.com/, and is valid until January 2, 2026. With this setup, HTTPS was successfully enabled and verified on my domain.
+
+
 
   
   
