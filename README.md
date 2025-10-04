@@ -324,9 +324,9 @@ The purpose of this lab is to configure and test DNS using a free cloud DNS prov
 
 ## 3. Verify DNS Propagation
 - Verified using the following commands on Ubuntu:
--nslookup jameson06.ddnsfree.com
--dig jameson06.ddnsfree.com
--ping -c 4 jameson06.ddnsfree.com
+- nslookup jameson06.ddnsfree.com
+- dig jameson06.ddnsfree.com
+- ping -c 4 jameson06.ddnsfree.com
 ---
 # Using nslookup
 - The result showed that the domain successfully resolved to the correct public IP 45.195.233.213.
@@ -341,4 +341,15 @@ The purpose of this lab is to configure and test DNS using a free cloud DNS prov
 - ping -c 4 jameson06.ddnsfree.com
 - The ping command successfully resolved the domain to 45.195.233.213 and returned responses, verifying connectivity to the server.
 ![Ping](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Ping.png?raw=true)
+
+## Digital Certificates – Use Let’s Encrypt to Secure a Server
+# 1. Install Certbot
+- Installed Certbot with Apache plugin:
+  
+-Updated package index:
+- sudo apt update
+  ![Apt update](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Apt%20update.png?raw=true)
+  
+- sudo apt install certbot python3-certbot-apache -y
+  
 
