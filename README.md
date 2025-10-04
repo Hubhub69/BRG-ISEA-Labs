@@ -307,5 +307,38 @@ Year 1: (11,200 − 2,800) ÷ 11,200 = **75%**
 
 
     ---
-     
-  
+
+## Session 3a - DNS and Certificates 
+# Objective 
+The purpose of this lab is to configure and test DNS using a free cloud DNS provider. I registered a free domain, created an A record that points to my server’s public IP, and verified DNS propagation using Linux CLI tools.
+---
+
+## 1. Register a Domain
+- Registered free DNS domain using Dynu.
+- Domain name: jameson06.ddnsfree.com
+  ![DNS](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/DNS.png?raw=true)
+
+## 2. Configure A Record
+- Created an A record pointing the domain to my server’s public IP address:
+  ![A Record Configuration](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Configuration.png?raw=true)
+
+## 3. Verify DNS Propagation
+- Verified using the following commands on Ubuntu:
+-nslookup jameson06.ddnsfree.com
+-dig jameson06.ddnsfree.com
+-ping -c 4 jameson06.ddnsfree.com
+---
+# Using nslookup
+- The result showed that the domain successfully resolved to the correct public IP 45.195.233.213.
+ ![nslookup](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/nslookup.png?raw=true)
+---
+# Using dig
+- dig jameson06.ddnsfree.com
+- The domain resolved to the same IP 45.195.233.213, confirming that the DNS record was published globally.
+![Dig](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Dig.png?raw=true)
+---
+# Using Ping 
+- ping -c 4 jameson06.ddnsfree.com
+- The ping command successfully resolved the domain to 45.195.233.213 and returned responses, verifying connectivity to the server.
+![Ping](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Ping.png?raw=true)
+
