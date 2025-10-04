@@ -351,5 +351,23 @@ The purpose of this lab is to configure and test DNS using a free cloud DNS prov
   ![Apt update](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Apt%20update.png?raw=true)
   
 - sudo apt install certbot python3-certbot-apache -y
+  ![Certbot dpmain](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/certbot%20domain.png?raw=true)
+
+## 2. Run Certbot
+-Entered email address for renewal notifications.
+
+-Agreed to Let’s Encrypt Terms of Service.
+
+-Chose whether to share email with EFF.
+
+-Entered domain: jameson06.ddnsfree.com
+
+- sudo certbot --apache
+![Run Certbot](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Run%20Certbot.png?raw=true)
+
+
+## Verification Result
+
+  
   
 
