@@ -497,14 +497,69 @@ Before the final demonstration, I re-tested all configurations to ensure system 
 ### Cloud-First & Server Architecture Design – Considerations & Approaches
 During this session, I learned the importance of a **Cloud-First** mindset in server architecture design.  
 
-By prioritising scalability, automation, and reliability, I understood how cloud environments (such as AWS or Docker) can improve flexibility and resilience compared to on-premise setups.  
-I also realised that combining automation tools and secure configurations enables smoother deployments and easier maintenance — key elements in modern DevOps practices.
+By prioritizing scalability, automation, and reliability, I understood how cloud environments such as AWS or Docker can improve flexibility and resilience compared to on-premise setups.  
+I also realised that combining automation tools and secure configurations enables smoother deployments and easier maintenance, key elements in modern DevOps practices.
 
 ---
 
+## Session 4A – Additional Server Service (MySQL)
 
+### Objective
+- Install, configure, and test a MySQL database server on Ubuntu.
+  ---
+  
+### Installation Steps
+**Step 1 – Update Packages**
+``` bash
+sudo apt update
+```
+![sudo apt update](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/sudo%20apt%20update%20for%20MySQL.png?raw=true)
 
+## Install MySQL Server
+``` bash
+sudo apt install mysql-server -y
+```
+![Install MySQL server](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Install%20MySQL.png?raw=true)
 
+## Verify MySQL Service Status
+ ```bash
+sudo systemctl status mysql
+```
+![MySQL active status](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Check%20MySQL%20service.png?raw=true)
+
+## Login and Create Database
+``` bash
+sudo mysql
+```
+
+## MySQL prompt:
+``` bash
+CREATE DATABASE testdb;
+CREATE USER 'student'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON testdb.* TO 'student'@'localhost';
+```
+![login + create database](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/root%20login%20+%20CREATE%20DATABASE.png?raw=true)
+
+## Test User Login
+``` bash
+mysql -u student -p
+```
+![Test user login](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/mysql%20user%20login.png?raw=true)
+
+## Challenges for session 4A
+-  When creating the MySQL user account, I initially received a syntax error because I forgot to end the SQL command with a semicolon (`;`).  
+  → I corrected it and successfully created the user `'student'@'localhost'`.
+
+- During installation, the process took longer than expected due to missing dependencies, but using the `-y` flag with `apt install` helped automate confirmations.
+
+- I also learned that the MySQL root account can only be accessed with `sudo mysql`, not `mysql -u root`, because of authentication method differences in Ubuntu.
+
+- I often forgot that SQL keywords are case-insensitive, but it is recommended to use **uppercase** for better readability.  
+  (Example: `CREATE DATABASE` works the same as `create database`.)
+
+- After fixing these issues, I successfully logged in as the new user and verified that the database `testdb` worked correctly.
+
+  ----
   
   
 
