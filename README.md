@@ -472,6 +472,38 @@ sudo systemctl status cron
 - The log file didn’t update until I used full absolute paths in both the script and the cron job.  
 - Learned that cron uses a different environment PATH, so using `sudo crontab -e` and full paths solved the problem.
 
+----
+## Session 4A - Lab Consultation & System Verification
+
+### Consultation Summary
+- Participated in a Q&A session with the teaching staff.
+- Discussed issues faced in previous sessions, such as:
+ - Cron job permission errors and script scheduling.
+ - SSL certificate renewal and domain name propagation delays.
+ - Verifying DNS resolution and Apache HTTPS accessibility.
+- Confirmed with the lecturer that all configurations were working correctly before the final presentation.
+
+---
+### System Verification
+Before the final demonstration, I re-tested all configurations to ensure system stability:
+- Apache web server successfully responded over HTTPS.
+- Cron automation script executed and logged correctly.
+- DNS records resolved to the correct IP address.
+- SSL certificates remained valid and properly configured.
+
+ ### All services functioned as expected, and the server environment was fully operational.
+ ---
+ 
+### Cloud-First & Server Architecture Design – Considerations & Approaches
+During this session, I learned the importance of a **Cloud-First** mindset in server architecture design.  
+
+By prioritising scalability, automation, and reliability, I understood how cloud environments (such as AWS or Docker) can improve flexibility and resilience compared to on-premise setups.  
+I also realised that combining automation tools and secure configurations enables smoother deployments and easier maintenance — key elements in modern DevOps practices.
+
+---
+
+
+
 
   
   
