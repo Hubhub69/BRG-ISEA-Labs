@@ -392,8 +392,11 @@ Once the firewall was corrected, I made sure Apache was actively running on port
 
 Finally, the certificate for jameson06.ddnsfree.com was issued, stored at /etc/letsencrypt/live/jameson06.ddnsfree.com/, and is valid until January 2, 2026. With this setup, HTTPS was successfully enabled and verified on my domain.
 
+---
 
-
+## Session 3B – Server Automation
+# Objective:
+This lab focused on automating server maintenance tasks in Linux by creating Bash scripts and using cron jobs for scheduling. The goal was to reduce manual work and ensure regular updates and backups are performed automatically.
   
   
 
