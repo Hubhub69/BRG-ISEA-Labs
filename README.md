@@ -564,7 +564,7 @@ mysql -u student -p
   
 ### Overview
 - This final session focused on documenting all previous lab activities, verifying configurations, and reflecting on the overall learning experience throughout the BRG-ISEA module. 
-
+---
 - I prepared a complete GitHub repository with all screenshots, commands, and reflections from Sessions 1A to 4A.
 ---
 
@@ -575,19 +575,19 @@ mysql -u student -p
 - Received final feedback regarding my server setup and automation scripts.  
 - Practised explaining each configuration like a system consultant.
 
-- --
+---
 
 ### Unresolved Issues & Clarifications
 - DNS propagation delay sometimes caused temporary HTTPS errors.  
 - Still exploring automatic SSL certificate renewal through `certbot renew`.  
 - Need deeper understanding of MySQL authentication plugins.  
 - Planning to learn more about Docker and cloud containerization in the future.
-
+---
   
 ### Reflection
 Throughout this module, I gained valuable hands-on experience with **Linux server administration, cloud deployment, and service automation**.  
 Using tools such as **VirtualBox, Ubuntu, AWS EC2, Dynu DNS, Certbot, MySQL, and GitHub**, I learned how to install, configure, test, and document server environments efficiently.  
-
+---
 I improved my troubleshooting skills through real-world issues like permission conflicts, cron scheduling, and database configuration.  
 These experiences helped me develop a problem-solving mindset and confidence to work independently on system management tasks.
 ----
