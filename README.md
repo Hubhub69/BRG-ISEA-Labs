@@ -353,10 +353,13 @@ During the DNS configuration, my A record still pointed to the old IP address (4
 - Installed Certbot with Apache plugin:
   
 -Updated package index:
+``` bash
 - sudo apt update
+```
   ![Apt update](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Apt%20update.png?raw=true)
-  
+  ``` bash
 - sudo apt install certbot python3-certbot-apache -y
+```
   ![Certbot dpmain](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/certbot%20domain.png?raw=true)
 
 ## 2. Run Certbot
@@ -367,8 +370,10 @@ During the DNS configuration, my A record still pointed to the old IP address (4
 -Chose whether to share email with EFF.
 
 -Entered domain: jameson06.ddnsfree.com
-
+---
+``` bash
 - sudo certbot --apache
+```
 ![Run Certbot](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Run%20Certbot.png?raw=true)
 
 ---
@@ -419,11 +424,53 @@ echo "System maintenance completed successfully." >> /var/log/task.log
 
 ----
 Made the script executable:
-```
+``` bash
 chmod +x maintain.sh
+```
+![chmod +x for maintain.sh](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/chmod%20executable.png?raw=true)
 
+---
+## Test and Verify Script
 
+## Executed the script manually:
+``` bash
+sudo ./maintain.sh
+```
+![Run test](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Run%20test.png?raw=true)
 
+Checked log file output:
+``` bash
+cat /var/log/task.log
+```
+![Log Output](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Log%20output.png?raw=true)
+
+---
+## Schedule with Cron
+
+## Opened root’s crontab:
+``` bash
+sudo crontab -e
+```
+![crontab entry](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Crontab%20Entry.png?raw=true)
+
+Added a daily 2 AM schedule:
+``` bash
+0 2 * * * /home/ubuntu/maintain.sh >> /var/log/task.log 2>&1
+
+```
+
+![crontab script](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/crontab%20script.png?raw=true)
+
+Verified cron service status:
+``` bash
+sudo systemctl status cron
+```
+![crontab status](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/Cron%20status.png?raw=true)
+
+## Challenges for DNS and Propagation
+- The cron job didn’t execute at first because `apt` commands required root privileges.  
+- The log file didn’t update until I used full absolute paths in both the script and the cron job.  
+- Learned that cron uses a different environment PATH, so using `sudo crontab -e` and full paths solved the problem.
 
 
   
