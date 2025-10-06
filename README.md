@@ -395,8 +395,37 @@ Finally, the certificate for jameson06.ddnsfree.com was issued, stored at /etc/l
 ---
 
 ## Session 3B – Server Automation
-# Objective:
+---
+## Objective:
 This lab focused on automating server maintenance tasks in Linux by creating Bash scripts and using cron jobs for scheduling. The goal was to reduce manual work and ensure regular updates and backups are performed automatically.
+
+### Create Automation Script 
+Opened a new Bash file using Nano:
+```bash
+nano maintain.sh
+```
+![nano maintain](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/nano%20maintain.sh.png?raw=true)
+
+---
+Script content:
+```bash
+#!/bin/bash
+echo "===== $(date) =====" >> /var/log/task.log
+sudo apt update -y && sudo apt upgrade -y >> /var/log/task.log 2>&1
+sudo apt autoremove -y >> /var/log/task.log 2>&1
+echo "System maintenance completed successfully." >> /var/log/task.log
+```
+![script](https://github.com/Hubhub69/BRG-ISEA-Labs/blob/main/script%20content.png?raw=true)
+
+----
+Made the script executable:
+```
+chmod +x maintain.sh
+
+
+
+
+
   
   
 
