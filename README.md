@@ -588,7 +588,7 @@ mysql -u student -p
 Throughout this module, I gained valuable hands-on experience with **Linux server administration, cloud deployment, and service automation**.  
 Using tools such as **VirtualBox, Ubuntu, AWS EC2, Dynu DNS, Certbot, MySQL, and GitHub**, I learned how to install, configure, test, and document server environments efficiently.  
 ---
-I improved my troubleshooting skills through real-world issues like permission conflicts, cron scheduling, and database configuration.  
+-I improved my troubleshooting skills through real-world issues like permission conflicts, cron scheduling, and database configuration.  
 These experiences helped me develop a problem-solving mindset and confidence to work independently on system management tasks.
 ----
 ### Connection to Future IT Roles
