@@ -560,6 +560,49 @@ mysql -u student -p
 - After fixing these issues, I successfully logged in as the new user and verified that the database `testdb` worked correctly.
 
   ----
+  ## Session 4B – Lab Documentation & Reflection Journal
   
-  
+### Overview
+- This final session focused on documenting all previous lab activities, verifying configurations, and reflecting on the overall learning experience throughout the BRG-ISEA module. 
 
+- I prepared a complete GitHub repository with all screenshots, commands, and reflections from Sessions 1A to 4A.
+---
+
+  ### Key Activities
+- Compiled all lab documentation into a clear and structured README file.  
+- Uploaded all screenshots of services (Apache, SSL, cron, MySQL).  
+- Discussed with peers and the lecturer about the technical challenges faced in previous sessions.  
+- Received final feedback regarding my server setup and automation scripts.  
+- Practised explaining each configuration like a system consultant.
+
+- --
+
+### Unresolved Issues & Clarifications
+- DNS propagation delay sometimes caused temporary HTTPS errors.  
+- Still exploring automatic SSL certificate renewal through `certbot renew`.  
+- Need deeper understanding of MySQL authentication plugins.  
+- Planning to learn more about Docker and cloud containerization in the future.
+
+  
+### Reflection
+Throughout this module, I gained valuable hands-on experience with **Linux server administration, cloud deployment, and service automation**.  
+Using tools such as **VirtualBox, Ubuntu, AWS EC2, Dynu DNS, Certbot, MySQL, and GitHub**, I learned how to install, configure, test, and document server environments efficiently.  
+
+I improved my troubleshooting skills through real-world issues like permission conflicts, cron scheduling, and database configuration.  
+These experiences helped me develop a problem-solving mindset and confidence to work independently on system management tasks.
+----
+### Connection to Future IT Roles
+This project gave me practical insights into roles such as:
+- **System Administrator** – managing and securing Linux-based servers.  
+- **DevOps Engineer** – using automation scripts and continuous testing.  
+- **Cloud Engineer** – deploying scalable and resilient services in the cloud.
+---
+  By practising documentation, automation, and structured reflection, I’ve built a strong foundation for future IT operations and consulting work.
+  ---
+  ### Tools Used
+- **VirtualBox / Ubuntu 22.04** – virtual server setup  
+- **AWS EC2** – cloud instance deployment  
+- **Dynu DNS & Certbot** – domain registration and SSL configuration  
+- **Cron** – task automation scheduling  
+- **MySQL** – additional server service  
+- **GitHub** – documentation and version contro
